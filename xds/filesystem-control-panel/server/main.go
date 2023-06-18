@@ -27,6 +27,9 @@ import (
 )
 
 import (
+	"github.com/dubbo-go-pixiu/pixiu-api/pkg/xds"
+	pixiupb "github.com/dubbo-go-pixiu/pixiu-api/pkg/xds/model"
+
 	core "github.com/envoyproxy/go-control-plane/envoy/config/core/v3"
 	"github.com/envoyproxy/go-control-plane/pkg/cache/types"
 	"github.com/envoyproxy/go-control-plane/pkg/cache/v3"
@@ -39,11 +42,6 @@ import (
 	"google.golang.org/protobuf/encoding/protojson"
 
 	"google.golang.org/protobuf/types/known/anypb"
-)
-
-import (
-	"github.com/dubbo-go-pixiu/pixiu-api/pkg/xds"
-	pixiupb "github.com/dubbo-go-pixiu/pixiu-api/pkg/xds/model"
 )
 
 var (
